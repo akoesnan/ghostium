@@ -9,7 +9,7 @@
             <ul class="post-meta-list">
               <li class="post-meta-item">
                 <time datetime="{{date published_at format="YYYY-MM-DD"}}" itemprop="datePublished">
-                  {{date published_at timeago="true"}}
+                  {{date published_at format="DD-MM-YYYY"}}
                 </time>
               </li>
               {{#if tags}}
@@ -21,7 +21,7 @@
                 </li>
               {{/if}}
               <li class="post-meta-item">
-                <a href="#disqus_thread" data-disqus-identifier="{{id}}">Comments</a>
+                <a href="#disqus_thread" data-disqus-identifier="{{id}}">Komen</a>
               </li>
             </ul>
             <h1 itemprop="name headline" class="post-title"><a href="{{url}}" itemprop="url" data-pjax title="{{{title}}}">{{{title}}}</a></h1>
@@ -54,7 +54,7 @@
                 </a>
               {{/if}}
               <div class="post-author-info">
-                <h4 class="post-footer-heading">Written By</h4>
+                <h4 class="post-footer-heading">Ditulis Oleh</h4>
                 <a href="{{author.website}}" itemprop="url" class="post-author-name">
                   <span itemprop="name">{{author.name}}</span>
                 </a>
@@ -68,7 +68,7 @@
                   </p>
                 {{/if}}
                 <p class="post-info">
-                  <b class="post-info-title">Published on</b>
+                  <b class="post-info-title">Dipublish</b>
                   <time class="post-date">{{date format='MMMM DD, YYYY'}}</time>
                 </p>
               </div>
